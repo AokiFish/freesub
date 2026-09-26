@@ -4,52 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.158.146
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: r3mrcg001286ek2.cybervena.com
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: namrcg001640lrm.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: 82.47.63.156
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 72a672a7-ad57-4083-a79a-66a856cecd12
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 118.167.230.191
   port: 24215
   udp: true
@@ -59,33 +28,8 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
-  server: 206.1.98.72
-  port: 21811
-  udp: true
-  type: vmess
-  uuid: Nitro_Skybot@
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: aa285da7-ec58-4ca5-a97a-6ab9cfe5ee08
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
   port: 443
   udp: true
@@ -98,28 +42,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

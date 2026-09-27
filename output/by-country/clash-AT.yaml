@@ -25,13 +25,16 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 86.106.119.23
-  port: 443
+  server: 161.104.107.198
+  port: 43
   udp: true
-  type: trojan
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  sni: gr.freeguard.org
+  type: vless
+  uuid: dc0d27ba-34d2-4c8b-9cba-9ddbbb632748
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 1bs-abs-more.ru
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

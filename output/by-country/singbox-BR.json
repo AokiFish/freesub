@@ -4,24 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "104.21.70.21",
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "89.39.161.157",
       "server_port": 443,
-      "password": "Telegram_healer_config",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "aksai.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560",
+        "path": "/linkvws",
         "headers": {
-          "Host": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev"
+          "Host": "aksai.org"
         }
       }
     },
@@ -30,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

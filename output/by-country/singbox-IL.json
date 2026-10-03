@@ -56,12 +56,33 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
           "public_key": "AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc",
           "short_id": "fffff8acddadcac3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
+      "server": "2.26.80.235",
+      "server_port": 443,
+      "uuid": "cb0ccf90-0e8f-4621-b042-4e35c797de2b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_gjcl5q-hkJIFmKYSY9DbBcSiBHK3YUAKOfZzZqnkT8",
+          "short_id": "c17f1d8951b3bf90"
         }
       }
     },
@@ -72,7 +93,8 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe",
+        "🇮🇱 以色列 (Israel) 04 - xiaohe"
       ]
     },
     {
@@ -81,7 +103,8 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe",
+        "🇮🇱 以色列 (Israel) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
